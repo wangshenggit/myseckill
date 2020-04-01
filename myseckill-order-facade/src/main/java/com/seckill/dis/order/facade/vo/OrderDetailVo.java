@@ -1,8 +1,8 @@
-package com.seckill.dis.common.api.order.vo;
+package com.seckill.dis.order.facade.vo;
 
-import com.seckill.dis.common.api.goods.vo.GoodsVo;
-import com.seckill.dis.common.api.user.vo.UserVo;
 import com.seckill.dis.common.domain.OrderInfo;
+import com.seckill.dis.goods.facade.vo.GoodsVo;
+import com.seckill.dis.user.facade.vo.UserVo;
 
 /**
  * 订单详情，包含订单信息和商品信息

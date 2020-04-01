@@ -6,20 +6,26 @@
     <packaging>pom</packaging>
 
     <groupId>com.seckill.dis</groupId>
-    <artifactId>dis-seckill</artifactId>
+    <artifactId>myseckill</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>dis-seckill</name>
+    <name>myseckill</name>
     <description>分布式商品秒杀系统</description>
 
     <modules>
-        <module>dis-seckill-user</module>
-        <module>dis-seckill-common</module>
-        <module>dis-seckill-gateway</module>
-        <module>dis-seckill-goods</module>
-        <module>dis-seckill-order</module>
-        <module>dis-seckill-cache</module>
-        <module>dis-seckill-mq</module>
+        <module>myseckill-user</module>
+        <module>myseckill-user-facade</module>
+        <module>myseckill-common</module>
+        <module>myseckill-gateway</module>
+        <module>myseckill-goods</module>
+        <module>myseckill-goods-facade</module>
+        <module>myseckill-order</module>
+        <module>myseckill-order-facade</module>
+        <module>myseckill-cache</module>
+        <module>myseckill-cache-facade</module>
+        <!--<module>myseckill-mq</module>-->
+        <module>myseckill-rmq</module>
+        <module>myseckill-rmq-facade</module>
     </modules>
 
 
@@ -46,7 +52,7 @@
 
             <dependency>
                 <groupId>com.seckill.dis</groupId>
-                <artifactId>dis-seckill-common</artifactId>
+                <artifactId>myseckill-common</artifactId>
                 <version>${top-version}</version>
             </dependency>
 

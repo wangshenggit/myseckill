@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.goods.vo;
+package com.seckill.dis.goods.facade.vo;
 
 import com.seckill.dis.common.domain.Goods;
 

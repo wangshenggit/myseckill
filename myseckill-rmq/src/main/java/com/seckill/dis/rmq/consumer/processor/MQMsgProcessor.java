@@ -1,8 +1,8 @@
-package com.clouds.common.rocketmq.consumer.processor;
-
-import java.util.List;
+package com.seckill.dis.rmq.consumer.processor;
 
 import com.alibaba.rocketmq.common.message.MessageExt;
+
+import java.util.List;
 
 /**
  * 消息队列-消息消费处理接口

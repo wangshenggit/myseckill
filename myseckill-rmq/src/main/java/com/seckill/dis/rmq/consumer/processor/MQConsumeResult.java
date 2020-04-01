@@ -1,6 +1,7 @@
-package com.clouds.common.rocketmq.consumer.processor;
+package com.seckill.dis.rmq.consumer.processor;
 
 import java.io.Serializable;
+
 /**
  * 消费结果
  * .<br/>

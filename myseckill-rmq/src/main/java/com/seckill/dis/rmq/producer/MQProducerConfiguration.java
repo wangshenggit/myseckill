@@ -1,9 +1,10 @@
-package com.seckill.dis.rmq.config;
+package com.seckill.dis.rmq.producer;
 
 import com.alibaba.rocketmq.client.exception.MQClientException;
 import com.alibaba.rocketmq.client.producer.TransactionMQProducer;
 import com.seckill.dis.rmq.constants.RocketMQErrorEnum;
 import com.seckill.dis.rmq.exception.RocketMQException;
+import com.seckill.dis.rmq.producer.processor.MyTransactionCheckListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

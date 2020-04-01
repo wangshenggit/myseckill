@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.cache;
+package com.seckill.dis.cache.facade;
 
 /**
  * 分布式锁接口

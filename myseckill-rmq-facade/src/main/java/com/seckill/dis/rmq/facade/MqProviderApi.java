@@ -1,6 +1,7 @@
-package com.seckill.dis.common.api.mq;
+package com.seckill.dis.rmq.facade;
 
-import com.seckill.dis.common.api.mq.vo.SkMessage;
+
+import com.seckill.dis.rmq.facade.vo.SkMessage;
 
 /**
  * 消息队列服务

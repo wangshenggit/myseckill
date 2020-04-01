@@ -1,9 +1,9 @@
-package com.seckill.dis.common.api.order;
+package com.seckill.dis.order.facade;
 
-import com.seckill.dis.common.api.goods.vo.GoodsVo;
-import com.seckill.dis.common.api.user.vo.UserVo;
 import com.seckill.dis.common.domain.OrderInfo;
 import com.seckill.dis.common.domain.SeckillOrder;
+import com.seckill.dis.goods.facade.vo.GoodsVo;
+import com.seckill.dis.user.facade.vo.UserVo;
 
 /**
  * 订单服务接口

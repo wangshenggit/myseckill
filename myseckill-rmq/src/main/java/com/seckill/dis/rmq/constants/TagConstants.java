@@ -1,4 +1,4 @@
-package com.clouds.common.rocketmq;
+package com.seckill.dis.rmq.constants;
 
 public class TagConstants {
 	/**Demo主题*/

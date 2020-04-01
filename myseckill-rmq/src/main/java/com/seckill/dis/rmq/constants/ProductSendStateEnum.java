@@ -1,4 +1,4 @@
-package com.clouds.common.rocketmq.constants;
+package com.seckill.dis.rmq.constants;
 /**
  * 消息发送状态：-201：定时任务发送失败（人工处理），-200：生产者发送失败（定时任务处理），100：待发送，200：生产者发送成功，201：定时任务发送成功
  * .<br/>

@@ -1,6 +1,7 @@
-package com.seckill.dis.common.util;
+package com.seckill.dis.goods.utils;
 
-import com.seckill.dis.common.api.seckill.vo.VerifyCodeVo;
+
+import com.seckill.dis.goods.facade.vo.VerifyCodeVo;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

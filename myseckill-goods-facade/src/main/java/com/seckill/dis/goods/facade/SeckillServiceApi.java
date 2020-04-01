@@ -1,7 +1,8 @@
-package com.seckill.dis.common.api.seckill;
+package com.seckill.dis.goods.facade;
 
-import com.seckill.dis.common.api.user.vo.UserVo;
 import com.seckill.dis.common.domain.OrderInfo;
+import com.seckill.dis.goods.facade.vo.GoodsVo;
+import com.seckill.dis.user.facade.vo.UserVo;
 
 /**
  * 秒杀服务接口

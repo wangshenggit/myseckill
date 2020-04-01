@@ -1,14 +1,9 @@
-package com.clouds.common.rocketmq.annotation;
+package com.seckill.dis.rmq.annotation;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-
+import com.seckill.dis.rmq.constants.TopicEnum;
 import org.springframework.stereotype.Service;
 
-import com.clouds.common.rocketmq.TopicEnum;
+import java.lang.annotation.*;
 
 
 /**

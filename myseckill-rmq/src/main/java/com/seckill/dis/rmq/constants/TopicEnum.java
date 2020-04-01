@@ -1,4 +1,4 @@
-package com.seckill.dis.rmq.enums;
+package com.seckill.dis.rmq.constants;
 /**
  * 定义消息队列主题<br/>
  * 注意：MQ消息队列主题，每个主题的子主题，请到tags下面定义

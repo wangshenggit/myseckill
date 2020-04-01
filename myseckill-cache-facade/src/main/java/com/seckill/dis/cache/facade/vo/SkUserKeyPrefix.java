@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.cache.vo;
+package com.seckill.dis.cache.facade.vo;
 
 import java.io.Serializable;
 

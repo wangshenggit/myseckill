@@ -1,13 +1,13 @@
-package com.clouds.common.rocketmq.consumer.processor;
+package com.seckill.dis.rmq.consumer.processor;
+
+import com.alibaba.rocketmq.common.message.MessageConst;
+import com.alibaba.rocketmq.common.message.MessageExt;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import com.alibaba.rocketmq.common.message.MessageConst;
-import com.alibaba.rocketmq.common.message.MessageExt;
 /**
  * 所有消息处理继承该类
  * .<br/>

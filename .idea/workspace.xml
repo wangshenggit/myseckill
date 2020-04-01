@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c79dded7-9372-412a-b2a7-1bf4ca01f695" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/config/RedisConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/config/RedisPoolFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/service/RedisLockImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/service/RedisServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/schema/seckill.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/DLockApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/RedisServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/AccessKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/BaseKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/GoodsKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/KeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/OrderKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/SkKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/SkUserKeyPrefix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/UserKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/GoodsServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/vo/GoodsDetailVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/vo/GoodsVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/mq/MqProviderApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/mq/vo/SkMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/order/OrderServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/order/vo/OrderDetailVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/seckill/SeckillServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/seckill/vo/VerifyCodeVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/UserServiceApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/LoginVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/RegisterVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/UserInfoVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/UserVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/Goods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/OrderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/exception/GlobalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/result/CodeMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/result/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/DBUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/MD5Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/UUIDUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/ValidatorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/VerifyCodeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/validator/IsMobile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/validator/IsMobileValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/DisSeckillServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/GatewayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessLimit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/UserContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/resolver/UserArgumentResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/exception/GlobalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/goods/GoodsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/order/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/seckill/SeckillController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/goods_detail.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/iphone8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/iphonex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/meta10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/mi6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/localization/messages_zh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/md5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/mobile/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/mobile/need/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/order_detail.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/goods_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/goods_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/order_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/GoodsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/persistence/GoodsMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/service/GoodsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/service/SeckillServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/MqApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/config/MQConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/receiver/MqConsumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/service/MqProviderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-order/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/OrderApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/persistence/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/service/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/UserApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/domain/SeckillUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/persistence/SeckillUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/persistence/SeckillUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/util/UserUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/DLockApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/DLockApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/RedisServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/RedisServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/BaseKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/BaseKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/KeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/KeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkUserKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkUserKeyPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/UserKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/GoodsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/GoodsServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/utils/VerifyCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/utils/VerifyCodeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/vo/OrderDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/vo/OrderDetailVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/annotation/MQConsumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/annotation/MQConsumeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ProductSendStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ProductSendStateEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/RocketMQErrorEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/RocketMQErrorEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TagConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TagConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TopicEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TopicEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/AppException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/RocketMQException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/RocketMQException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/UserServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/UserServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-goods/target/" />
+    <ignored path="$PROJECT_DIR$/seckill-goods/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-order/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-common/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-user/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-mq/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-cache/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-rmq/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-cache-facade/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-goods-facade/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-order-facade/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-user-facade/target/" />
+    <ignored path="$PROJECT_DIR$/myseckill-rmq-facade/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-182" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-108" />
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1386">
+              <caret line="77" column="49" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring-boot-dependencies</find>
+      <find>buyButton</find>
+      <find>sender</find>
+      <find>Session不存在或者已经失效</find>
+      <find>开始发送消息</find>
+      <find>SkUserKeyPrefix</find>
+      <find>VerifyCodeVo</find>
+      <find>VerifyCodeUtil</find>
+      <find>秒杀，秒杀成功</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/api/seckill/SeckillServiceApi.java" />
+        <option value="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" />
+        <option value="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" />
+        <option value="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" />
+        <option value="$PROJECT_DIR$/myseckill-user-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/UserServiceApi.java" />
+        <option value="$PROJECT_DIR$/myseckill-user/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-user/src/main/java/com/seckill/dis/user/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-order-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/vo/OrderDetailVo.java" />
+        <option value="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java" />
+        <option value="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/utils/VerifyCodeUtil.java" />
+        <option value="$PROJECT_DIR$/myseckill-goods/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-goods-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-rmq-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java" />
+        <option value="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/UserContext.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java" />
+        <option value="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsDetailVo.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-order/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-order/src/main/java/com/seckill/dis/order/service/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/user/UserController.java" />
+        <option value="$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/resolver/UserArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/myseckill-cache-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/test/java/com/seckill/dis/rmq/MyseckillRmqApplicationTests.java" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/resources/templates/order_detail.html" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/resources/static/order_detail.htm" />
+        <option value="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/service/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/order/OrderController.java" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/DisSeckillServletInitializer.java" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/goods/GoodsController.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/result/Result.java" />
+        <option value="$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/seckill/SeckillController.java" />
+        <option value="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/service/SeckillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="seckill" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-goods" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-order" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="processor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-rmq" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-user" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585744897230" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../share-jdbc" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.seckill.dis.rmq.facade.vo" />
+      <recent name="com.seckill.dis.goods.utils" />
+      <recent name="com.seckill.dis.rmq.consumer.processor" />
+      <recent name="com.seckill.dis.rmq.producer.processor" />
+      <recent name="com.seckill.dis.rmq.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\work\myseckill\myseckill-rmq-facade\src\main\java\com\seckill\dis\rmq\facade" />
+      <recent name="C:\work\myseckill\myseckill-user-facade\src\main\java\com\seckill\dis\user\facade" />
+      <recent name="C:\work\myseckill\myseckill-order-facade\src\main\java\com\seckill\dis\order\facade" />
+      <recent name="C:\work\myseckill\myseckill-goods-facade\src\main\java\com\seckill\dis\goods\facade" />
+      <recent name="C:\work\myseckill\myseckill-cache-facade\src\main\java\com\seckill\dis\cache\facade" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="MyseckillRmqApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseckill-rmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seckill.dis.rmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seckill.dis.rmq" />
+      <option name="MAIN_CLASS_NAME" value="com.seckill.dis.rmq.MyseckillRmqApplicationTests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillRmqApplicationTests.sendWithTransactionMQProducer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseckill-rmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seckill.dis.rmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seckill.dis.rmq" />
+      <option name="MAIN_CLASS_NAME" value="com.seckill.dis.rmq.MyseckillRmqApplicationTests" />
+      <option name="METHOD_NAME" value="sendWithTransactionMQProducer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-cache" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.cache.CacheApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-goods" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.goods.GoodsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-mq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.mq.MqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillCacheFacadeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-cache-facade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.cache.MyseckillCacheFacadeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillGoodsFacadeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-goods-facade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.goods.MyseckillGoodsFacadeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillOrderFacadeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-order-facade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.order.facade.MyseckillOrderFacadeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillRmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-rmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.rmq.MyseckillRmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillRmqFacadeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-rmq-facade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.rmq.facade.MyseckillRmqFacadeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyseckillUserFacadeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-user-facade" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.user.facade.MyseckillUserFacadeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.order.OrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="myseckill-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.seckill.dis.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyseckillRmqApplicationTests.sendWithTransactionMQProducer" />
+        <item itemvalue="JUnit.MyseckillRmqApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c79dded7-9372-412a-b2a7-1bf4ca01f695" name="Default Changelist" comment="" />
+      <created>1585282918734</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585282918734</updated>
+      <workItem from="1585282921913" duration="7046000" />
+      <workItem from="1585297460847" duration="6820000" />
+      <workItem from="1585356893685" duration="27456000" />
+      <workItem from="1585446920849" duration="39573000" />
+      <workItem from="1585532352106" duration="26852000" />
+      <workItem from="1585621205559" duration="25888000" />
+      <workItem from="1585704356196" duration="60000" />
+      <workItem from="1585733911569" duration="1973000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MyseckillRmqApplicationTests - 2020.03.28 at 19h 34m 51s.xml">
+      <configuration name="MyseckillRmqApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyseckillRmqApplicationTests_sendWithTransactionMQProducer - 2020.03.28 at 19h 35m 54s.xml">
+      <configuration name="MyseckillRmqApplicationTests.sendWithTransactionMQProducer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyseckillRmqApplicationTests_sendWithTransactionMQProducer - 2020.03.28 at 19h 38m 37s.xml">
+      <configuration name="MyseckillRmqApplicationTests.sendWithTransactionMQProducer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyseckillRmqApplicationTests_sendWithTransactionMQProducer - 2020.03.28 at 19h 40m 16s.xml">
+      <configuration name="MyseckillRmqApplicationTests.sendWithTransactionMQProducer" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="135668000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26907632" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4225352" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3830986" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6394366" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32957748" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32957748" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="14" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
+      <window_info anchor="bottom" id="JRebel Executor" order="17" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="18" />
+      <window_info anchor="bottom" id="Tail" order="19" />
+      <window_info anchor="bottom" id="Messages" order="20" weight="0.49859154" />
+      <window_info anchor="bottom" id="Problems" order="21" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="PlantUML" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Word Book" order="7" side_tool="true" />
+      <window_info anchor="right" id="BPMNPalette" order="8" />
+      <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
+      <window_info anchor="right" id="Database" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="11" />
+      <window_info anchor="right" id="Theme Preview" order="12" />
+      <window_info anchor="right" id="Bean Validation" order="13" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>redisService.get(SkUserKeyPrefix.TOKEN, token, UserVo.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stringToBean(strValue, UserVo.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.seckill.dis.user.facade.vo.UserVo</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisService.get(SkUserKeyPrefix.TOKEN, token, new UserVo().getClass())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>redisService.get(SkUserKeyPrefix.TOKEN, token, (Class&lt;UserVo&gt;)UserVo.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>stringToBean(strValue, clazz)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jedis.get(realKey)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>prefix.getPrefix() + key</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>prefix.getPrefix()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>getCookieValue(request, UserServiceApi.COOKIE_NAME_TOKEN)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/producer/LocalTransactionExecuter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1120">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="48" column="131" selection-start-line="48" selection-start-column="131" selection-end-line="48" selection-end-column="131" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/test/java/com/seckill/dis/rmq/MyseckillRmqApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-common/schema/seckill.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="91" column="7" selection-start-line="91" selection-start-column="7" selection-end-line="91" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/redis/clients/jedis/2.9.3/jedis-2.9.3.jar!/redis/clients/jedis/Jedis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="260" column="16" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisLockImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/domain/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.19/tomcat-embed-core-9.0.19.jar!/org/apache/catalina/valves/ErrorReportValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/RedisServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/templates/order_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="76" column="7" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="76" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/static/order_detail.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="45" column="12" lean-forward="true" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/DisSeckillServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding>
+            <element signature="e#645#646#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/java/com/seckill/dis/order/OrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/result/CodeMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/java/com/seckill/dis/order/service/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/goods/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="191" column="56" selection-start-line="191" selection-start-column="56" selection-end-line="191" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/templates/goods_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="184" column="45" selection-start-line="184" selection-start-column="45" selection-end-line="184" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/service/SeckillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding>
+            <element signature="e#2102#2103#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+            <element signature="e#2314#2315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/GoodsServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/service/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/persistence/GoodsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/seckill/SeckillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3942">
+          <caret line="219" column="23" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessLimit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="77" column="49" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108" />
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>myseckill</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

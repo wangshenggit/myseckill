@@ -1,6 +1,7 @@
-package com.seckill.dis.common.api.goods;
+package com.seckill.dis.goods.facade;
 
-import com.seckill.dis.common.api.goods.vo.GoodsVo;
+
+import com.seckill.dis.goods.facade.vo.GoodsVo;
 
 import java.util.List;
 

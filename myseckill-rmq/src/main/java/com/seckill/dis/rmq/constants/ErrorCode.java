@@ -1,4 +1,4 @@
-package com.clouds.common.rocketmq.constants;
+package com.seckill.dis.rmq.constants;
 
 import java.io.Serializable;
 

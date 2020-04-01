@@ -1,4 +1,4 @@
-package com.seckill.dis.rmq.config;
+package com.seckill.dis.rmq.producer;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;

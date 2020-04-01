@@ -1,6 +1,7 @@
-package com.clouds.common.rocketmq.exception;
+package com.seckill.dis.rmq.exception;
 
-import com.clouds.common.rocketmq.constants.ErrorCode;
+
+import com.seckill.dis.rmq.constants.ErrorCode;
 
 public class AppException extends RuntimeException {
 

@@ -1,4 +1,19 @@
-package com.clouds.common.rocketmq.consumer.processor;
+package com.seckill.dis.rmq.consumer.processor;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
+import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
+import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
+import com.alibaba.rocketmq.common.message.MessageExt;
+import com.seckill.dis.rmq.annotation.MQConsumeService;
+import com.seckill.dis.rmq.constants.RocketMQErrorEnum;
+import com.seckill.dis.rmq.exception.AppException;
+import com.seckill.dis.rmq.exception.RocketMQException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,21 +21,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.util.CollectionUtils;
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import com.alibaba.rocketmq.common.message.MessageExt;
-import com.clouds.common.rocketmq.annotation.MQConsumeService;
-import com.clouds.common.rocketmq.constants.RocketMQErrorEnum;
-import com.clouds.common.rocketmq.exception.AppException;
-import com.clouds.common.rocketmq.exception.RocketMQException;
 /**
  * 消费者消费消息路由
  * .<br/>
@@ -30,12 +30,7 @@ import com.clouds.common.rocketmq.exception.RocketMQException;
  * @ClassName: RocketMQMessageListenerConcurrentlyProcessor
  * @Description: 
  * @version: v1.0.0
- * @author: zhaowg
- * @date: 2018年2月28日 上午11:12:32
- * Modification History:
- * Date             Author          Version            Description
- *---------------------------------------------------------*
- * 2018年2月28日      zhaowg           v1.0.0               创建
+ * @author: wangsheng
  */
 @Component
 public class MQConsumeMsgListenerProcessor implements MessageListenerConcurrently{

@@ -1,6 +1,7 @@
-package com.seckill.dis.common.api.mq.vo;
+package com.seckill.dis.rmq.facade.vo;
 
-import com.seckill.dis.common.api.user.vo.UserVo;
+
+import com.seckill.dis.user.facade.vo.UserVo;
 
 import java.io.Serializable;
 

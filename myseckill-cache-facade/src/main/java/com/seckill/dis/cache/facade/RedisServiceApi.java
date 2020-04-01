@@ -1,6 +1,7 @@
-package com.seckill.dis.common.api.cache;
+package com.seckill.dis.cache.facade;
 
-import com.seckill.dis.common.api.cache.vo.KeyPrefix;
+
+import com.seckill.dis.cache.facade.vo.KeyPrefix;
 
 /**
  * redis 服务接口

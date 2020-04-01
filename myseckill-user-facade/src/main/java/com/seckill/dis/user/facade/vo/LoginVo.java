@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.user.vo;
+package com.seckill.dis.user.facade.vo;
 
 import com.seckill.dis.common.validator.IsMobile;
 import org.hibernate.validator.constraints.Length;

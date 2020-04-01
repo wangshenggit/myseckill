@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.user.vo;
+package com.seckill.dis.user.facade.vo;
 
 import java.io.Serializable;
 import java.util.Date;

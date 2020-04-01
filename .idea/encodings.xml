@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-cache-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-goods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-goods-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-order-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-rmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-rmq-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myseckill-user-facade" charset="UTF-8" />
+  </component>
+</project>

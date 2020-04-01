@@ -1,6 +1,7 @@
-package com.seckill.dis.common.api.user.vo;
+package com.seckill.dis.user.facade.vo;
 
-import javax.validation.constraints.NotNull;
+import com.sun.istack.internal.NotNull;
+
 import java.io.Serializable;
 
 /**
@@ -10,13 +11,10 @@ import java.io.Serializable;
  */
 public class RegisterVo implements Serializable {
 
-    @NotNull
     private Long phone;
-    @NotNull
     private String nickname;
 
     private String head;
-    @NotNull
     private String password;
 
     public Long getPhone() {

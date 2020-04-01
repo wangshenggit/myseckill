@@ -1,15 +1,23 @@
-package com.seckill.dis.mq.service;
+package com.seckill.dis.rmq.service;
 
-import com.seckill.dis.common.api.mq.MqProviderApi;
-import com.seckill.dis.common.api.mq.vo.SkMessage;
-import com.seckill.dis.mq.config.MQConfig;
-import org.apache.dubbo.config.annotation.Service;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.rocketmq.client.producer.SendResult;
+import com.alibaba.rocketmq.client.producer.TransactionMQProducer;
+import com.alibaba.rocketmq.common.message.Message;
+import com.seckill.dis.cache.facade.RedisServiceApi;
+import com.seckill.dis.rmq.constants.TagConstants;
+import com.seckill.dis.rmq.constants.TopicEnum;
+import com.seckill.dis.rmq.facade.MqProviderApi;
+import com.seckill.dis.rmq.facade.vo.SkMessage;
+import com.seckill.dis.rmq.producer.processor.MyLocalTransactionExecuter;
+import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.amqp.rabbit.connection.CorrelationData;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.dubbo.config.annotation.Service;
 
+import java.util.Date;
 import java.util.UUID;
 
 
@@ -20,43 +28,29 @@ import java.util.UUID;
  */
 
 @Service(interfaceClass = MqProviderApi.class)
-public class MqProviderImpl implements MqProviderApi, RabbitTemplate.ConfirmCallback {
+public class MqProviderImpl implements MqProviderApi {
 
     private static Logger logger = LoggerFactory.getLogger(MqProviderImpl.class);
 
-    private RabbitTemplate rabbitTemplate;
-
     @Autowired
-    public MqProviderImpl(RabbitTemplate rabbitTemplate) {
-        this.rabbitTemplate = rabbitTemplate;
-        // 设置 ack 回调
-        rabbitTemplate.setConfirmCallback(this);
-    }
+    private TransactionMQProducer transactionMQProducer;
+
+    @Reference(interfaceClass = RedisServiceApi.class)
+    RedisServiceApi redisService;
+
 
     @Override
-    public void sendSkMessage(SkMessage message) {
-        logger.info("MQ send message: " + message);
-        // 秒杀消息关联的数据
-        CorrelationData skCorrData = new CorrelationData(UUID.randomUUID().toString());
-        // 第一个参数为消息队列名(此处也为routingKey)，第二个参数为发送的消息
-        rabbitTemplate.convertAndSend(MQConfig.SECKILL_QUEUE, message, skCorrData);
+    public void sendSkMessage(SkMessage message) throws Exception {
+        logger.info("RMQ send message: " + message);
+
+        logger.info("开始发送消息：" + message.toString());
+        Message sendMsg = new Message(TopicEnum.DemoTopic.getCode(), TagConstants.DemoTopic.DemoTag, JSON.toJSONString(message).getBytes());
+
+        SendResult sendResult = transactionMQProducer.sendMessageInTransaction(sendMsg, new MyLocalTransactionExecuter(redisService), null);
+
+        logger.info("消息发送响应信息：" + sendResult.toString());
+
     }
 
-    /**
-     * MQ ack 机制
-     * TODO 完善验证机制，确保消息能够被消费，且不影响消息吞吐量
-     */
-    @Override
-    public void confirm(CorrelationData correlationData, boolean ack, String cause) {
-        logger.info("SkMessage UUID: " + correlationData.getId());
-        if (ack) {
-            logger.info("SkMessage 消息消费成功！");
-        } else {
-            System.out.println("SkMessage 消息消费失败！");
-        }
 
-        if (cause != null) {
-            logger.info("CallBackConfirm Cause: " + cause);
-        }
-    }
 }

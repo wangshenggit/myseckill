@@ -1,4 +1,11 @@
-package com.clouds.common.rocketmq.consumer;
+package com.seckill.dis.rmq.consumer;
+
+import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
+import com.alibaba.rocketmq.client.exception.MQClientException;
+import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
+import com.seckill.dis.rmq.constants.RocketMQErrorEnum;
+import com.seckill.dis.rmq.consumer.processor.MQConsumeMsgListenerProcessor;
+import com.seckill.dis.rmq.exception.RocketMQException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +14,6 @@ import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.util.StringUtils;
-
-import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
-import com.alibaba.rocketmq.client.exception.MQClientException;
-import com.alibaba.rocketmq.common.consumer.ConsumeFromWhere;
-import com.clouds.common.rocketmq.constants.RocketMQErrorEnum;
-import com.clouds.common.rocketmq.consumer.processor.MQConsumeMsgListenerProcessor;
-import com.clouds.common.rocketmq.exception.RocketMQException;
 
 
 /**

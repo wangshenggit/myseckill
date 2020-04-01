@@ -1,4 +1,4 @@
-package com.seckill.dis.common.api.seckill.vo;
+package com.seckill.dis.goods.facade.vo;
 
 import java.awt.image.BufferedImage;
 import java.io.Serializable;

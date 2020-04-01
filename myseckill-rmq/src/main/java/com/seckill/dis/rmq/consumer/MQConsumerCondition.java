@@ -1,4 +1,4 @@
-package com.clouds.common.rocketmq.consumer;
+package com.seckill.dis.rmq.consumer;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
@@ -21,7 +21,7 @@ import org.springframework.util.StringUtils;
  *---------------------------------------------------------*
  * 2018年3月1日      zhaowg           v1.0.0               创建
  */
-public class MQConsumerCondition implements Condition{
+public class MQConsumerCondition implements Condition {
 
 	@Override
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {

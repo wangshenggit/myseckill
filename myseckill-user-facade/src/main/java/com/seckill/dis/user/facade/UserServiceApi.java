@@ -1,12 +1,11 @@
-package com.seckill.dis.common.api.user;
+package com.seckill.dis.user.facade;
 
-import com.seckill.dis.common.api.user.vo.LoginVo;
-import com.seckill.dis.common.api.user.vo.RegisterVo;
-import com.seckill.dis.common.api.user.vo.UserInfoVo;
-import com.seckill.dis.common.api.user.vo.UserVo;
 import com.seckill.dis.common.result.CodeMsg;
+import com.seckill.dis.user.facade.vo.LoginVo;
+import com.seckill.dis.user.facade.vo.RegisterVo;
+import com.seckill.dis.user.facade.vo.UserInfoVo;
+import com.seckill.dis.user.facade.vo.UserVo;
 
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 /**
