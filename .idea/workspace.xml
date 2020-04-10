@@ -2,186 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79dded7-9372-412a-b2a7-1bf4ca01f695" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/config/RedisPoolFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/service/RedisLockImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/java/com/seckill/dis/cache/service/RedisServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-cache/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/schema/seckill.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/DLockApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/RedisServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/AccessKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/BaseKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/GoodsKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/KeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/OrderKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/SkKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/SkUserKeyPrefix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/cache/vo/UserKey.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/GoodsServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/vo/GoodsDetailVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/goods/vo/GoodsVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/mq/MqProviderApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/mq/vo/SkMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/order/OrderServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/order/vo/OrderDetailVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/seckill/SeckillServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/seckill/vo/VerifyCodeVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/UserServiceApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/LoginVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/RegisterVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/UserInfoVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/api/user/vo/UserVo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/Goods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/OrderInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/domain/SeckillUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/exception/GlobalException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/result/CodeMsg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/result/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/DBUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/JsonUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/MD5Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/UUIDUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/ValidatorUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/util/VerifyCodeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/validator/IsMobile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-common/src/main/java/com/seckill/dis/common/validator/IsMobileValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/DisSeckillServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessLimit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/UserContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/config/resolver/UserArgumentResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/exception/GlobalException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/goods/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/order/OrderController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/seckill/SeckillController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/java/com/seckill/dis/gateway/user/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/goods_detail.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/iphone8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/iphonex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/meta10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/img/mi6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/jquery-validation/localization/messages_zh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/js/md5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/mobile/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/mobile/need/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/layer/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/static/order_detail.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/goods_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/goods_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/order_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-gateway/src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/GoodsApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/persistence/GoodsMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/service/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/java/com/seckill/dis/goods/service/SeckillServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-goods/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/MqApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/config/MQConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/receiver/MqConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/java/com/seckill/dis/mq/service/MqProviderImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-mq/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-order/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/OrderApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/persistence/OrderMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/java/com/seckill/dis/order/service/OrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-order/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/UserApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/domain/SeckillUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/persistence/SeckillUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/persistence/SeckillUserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/service/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/java/com/seckill/dis/user/util/UserUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dis-seckill-user/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/DLockApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/DLockApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/RedisServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/RedisServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/BaseKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/BaseKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/KeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/KeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkUserKeyPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/SkUserKeyPrefix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache-facade/src/main/java/com/seckill/dis/cache/facade/vo/UserKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/GoodsServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/GoodsServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsDetailVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/GoodsVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/utils/VerifyCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/utils/VerifyCodeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/OrderServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/vo/OrderDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-order-facade/src/main/java/com/seckill/dis/order/facade/vo/OrderDetailVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/MqProviderApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/annotation/MQConsumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/annotation/MQConsumeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ProductSendStateEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/ProductSendStateEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/RocketMQErrorEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/RocketMQErrorEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TagConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TagConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TopicEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/constants/TopicEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/MQConsumerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/AppException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/RocketMQException.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/exception/RocketMQException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/MQProducerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/service/MqProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/UserServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/UserServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/LoginVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/DLockApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/RedisServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/AccessKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/BaseKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/GoodsKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/KeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/OrderKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/SkKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/SkUserKeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache-facade/target/classes/com/seckill/dis/cache/facade/vo/UserKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/com/seckill/dis/cache/CacheApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/com/seckill/dis/cache/config/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/com/seckill/dis/cache/config/RedisPoolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/com/seckill/dis/cache/service/RedisLockImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/target/classes/com/seckill/dis/cache/service/RedisServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/domain/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/domain/OrderInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/domain/SeckillGoods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/domain/SeckillOrder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/domain/SeckillUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/exception/GlobalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/result/CodeMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/result/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/util/DBUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/util/JsonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/util/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/util/UUIDUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/util/ValidatorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/validator/IsMobile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-common/target/classes/com/seckill/dis/common/validator/IsMobileValidator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/DisSeckillServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/GatewayApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/config/access/AccessInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/config/access/AccessLimit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/config/access/UserContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/config/resolver/UserArgumentResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/exception/GlobalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/goods/GoodsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/order/OrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/seckill/SeckillController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/com/seckill/dis/gateway/user/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/bootstrap/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/goods_detail.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/img/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/img/iphone8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/img/iphonex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/img/meta10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/img/mi6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/jquery-validation/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/jquery-validation/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/jquery-validation/localization/messages_zh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/js/md5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/mobile/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/mobile/need/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/layer/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/static/order_detail.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/templates/goods_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/templates/goods_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/templates/order_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-gateway/target/classes/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/target/classes/com/seckill/dis/goods/facade/GoodsServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/target/classes/com/seckill/dis/goods/facade/SeckillServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/target/classes/com/seckill/dis/goods/facade/vo/GoodsDetailVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/target/classes/com/seckill/dis/goods/facade/vo/GoodsVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/target/classes/com/seckill/dis/goods/facade/vo/VerifyCodeVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/com/seckill/dis/goods/GoodsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/com/seckill/dis/goods/persistence/GoodsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/com/seckill/dis/goods/service/GoodsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/com/seckill/dis/goods/service/SeckillServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-goods/target/classes/com/seckill/dis/goods/utils/VerifyCodeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/target/classes/com/seckill/dis/order/facade/OrderServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/target/classes/com/seckill/dis/order/facade/vo/OrderDetailVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order/target/classes/com/seckill/dis/order/OrderApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order/target/classes/com/seckill/dis/order/persistence/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-order/target/classes/com/seckill/dis/order/service/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/target/classes/com/seckill/dis/rmq/facade/MqProviderApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq-facade/target/classes/com/seckill/dis/rmq/facade/vo/SkMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/MyseckillRmqApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/annotation/MQConsumeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/ErrorCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/ProductSendStateEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/RocketMQErrorEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/TagConstants$DemoTopic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/TagConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/constants/TopicEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/MQConsumerCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/MQConsumerConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/processor/MQConsumeResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/exception/AppException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/exception/RocketMQException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/producer/MQProducerCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/producer/MQProducerConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/producer/processor/MyLocalTransactionExecuter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/producer/processor/MyTransactionCheckListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/classes/com/seckill/dis/rmq/service/MqProviderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-rmq/target/test-classes/com/seckill/dis/rmq/MyseckillRmqApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/target/classes/com/seckill/dis/user/facade/UserServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/target/classes/com/seckill/dis/user/facade/vo/LoginVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/target/classes/com/seckill/dis/user/facade/vo/RegisterVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/target/classes/com/seckill/dis/user/facade/vo/UserInfoVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/target/classes/com/seckill/dis/user/facade/vo/UserVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/UserApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/domain/SeckillUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/persistence/SeckillUserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/persistence/SeckillUserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-user/target/classes/com/seckill/dis/user/util/UserUtil.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -211,44 +177,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
+            <state relative-caret-position="1296">
               <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="562">
               <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -256,7 +227,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="1332">
               <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
             </state>
           </provider>
@@ -265,7 +236,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
+            <state relative-caret-position="936">
               <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
             </state>
           </provider>
@@ -273,16 +244,14 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
+            <state relative-caret-position="1044">
               <caret line="77" column="49" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -378,7 +347,7 @@
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1940" />
@@ -392,7 +361,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -696,7 +665,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -886,6 +855,7 @@
       <workItem from="1585621205559" duration="25888000" />
       <workItem from="1585704356196" duration="60000" />
       <workItem from="1585733911569" duration="1973000" />
+      <workItem from="1586482452340" duration="460000" />
     </task>
     <servers />
   </component>
@@ -904,7 +874,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135668000" />
+    <option name="totallyTimeSpent" value="136128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,10 +886,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26907632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27309236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -1032,13 +1002,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/rocketmq/rocketmq-client/3.2.6/rocketmq-client-3.2.6-sources.jar!/com/alibaba/rocketmq/client/producer/LocalTransactionExecuter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-rmq-facade/src/main/java/com/seckill/dis/rmq/facade/vo/SkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1193,13 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQConsumeMsgListenerProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-108">
@@ -1294,16 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/java/com/seckill/dis/goods/service/SeckillServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -1355,9 +1301,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/java/com/seckill/dis/gateway/config/access/AccessInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
+        <state relative-caret-position="1044">
           <caret line="77" column="49" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1372,56 +1360,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/SeckillServiceApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108" />
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myseckill-order/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
+        <state relative-caret-position="562">
           <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MQMsgProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/MyFirstConsumerMsgProcessImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myseckill-rmq/src/main/java/com/seckill/dis/rmq/consumer/processor/AbstractMQMsgProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
