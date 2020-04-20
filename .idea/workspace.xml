@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c79dded7-9372-412a-b2a7-1bf4ca01f695" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-common/myseckill-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-gateway/myseckill-gateway.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods-facade/myseckill-goods-facade.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-goods/myseckill-goods.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-order-facade/myseckill-order-facade.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-order/myseckill-order.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-rmq/myseckill-rmq.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user-facade/myseckill-user-facade.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myseckill-user/myseckill-user.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,12 +31,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="324">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/config/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisLockImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -71,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/myseckill-common/src/main/java/com/seckill/dis/common/api/seckill/SeckillServiceApi.java" />
         <option value="$PROJECT_DIR$/myseckill-goods-facade/src/main/java/com/seckill/dis/goods/facade/vo/VerifyCodeVo.java" />
         <option value="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/UserInfoVo.java" />
         <option value="$PROJECT_DIR$/myseckill-user-facade/src/main/java/com/seckill/dis/user/facade/vo/RegisterVo.java" />
@@ -122,6 +151,7 @@
         <option value="$PROJECT_DIR$/myseckill-user/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/myseckill-rmq/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/myseckill-goods/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/CacheApplication.java" />
       </list>
     </option>
   </component>
@@ -143,6 +173,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,11 +181,65 @@
               <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
               <item name="myseckill" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myseckill" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myseckill" type="462c0819:PsiDirectoryNode" />
+              <item name="myseckill-cache" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,7 +449,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137864000" />
+    <option name="totallyTimeSpent" value="137876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,9 +461,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1476" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28045514" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30774647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -395,7 +481,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32957748" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.41549295" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.448" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
@@ -577,7 +663,7 @@
     <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
-          <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
+          <caret line="85" column="55" selection-start-line="85" selection-start-column="55" selection-end-line="85" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -586,7 +672,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myseckill-cache/src/main/java/com/seckill/dis/cache/service/RedisLockImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
+        <state relative-caret-position="18">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
@@ -888,8 +974,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="324">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />

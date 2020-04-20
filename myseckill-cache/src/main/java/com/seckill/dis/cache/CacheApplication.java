@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 缓存服务
+ *
+ * test1234
+ *
  */
 @SpringBootApplication
 public class CacheApplication {
